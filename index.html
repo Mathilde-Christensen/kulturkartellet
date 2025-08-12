@@ -44,10 +44,10 @@
 
         <nav class="header_nav">
             <ul class="header_list">
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="event.html">Event</a></li>
-                <li><a href="omos.html">Om os</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a class="header_nav_a" href="index.html">Hjem</a></li>
+                <li><a class="header_nav_a" href="event.html">Event</a></li>
+                <li><a class="header_nav_a" href="omos.html">Om os</a></li>
+                <li><a class="header_nav_a" href="kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
 
@@ -60,16 +60,17 @@
     </header>
 
     <main>
+        
         <div class="hero">
-            <div class="hero">
-                <img class="hero_billede" src="billeder/hero/kantaraller.webp" alt="skærebrædt med kantraller">
-                
-                <div class="hero__text">
-                    <div class="hero_logo"><img src="billeder/logo/kulturkartellet_logo_hvid.png" alt="kulturkartellet logo hvid"></div>
-                    <p class="hero__p">bringer mennesker sammen gennem unikke arrangementer,  hvor alle sanser er i spil</p>
-                </div>
+            <img class="hero_img_mobil" src="billeder/hero/hero_mobil.webp" alt="skærebrædt med kantraller">
+            <img class="hero_img_desktop" src="billeder/hero/hero_desktop.webp" alt="skærebrædt med kantraller">
+
+            <div class="hero__text">
+                <div class="hero_logo"><img src="billeder/logo/kulturkartellet_logo_hvid.png" alt="kulturkartellet logo hvid"></div>
+                <p class="hero__p">bringer mennesker sammen gennem unikke arrangementer,  hvor alle sanser er i spil</p>
             </div>
         </div>
+        
 
         <div class="hjem_event">
             <div class="hjem_event_text">
@@ -110,11 +111,12 @@
 
     <footer>
         <img class="footer_logo" src="billeder/logo/kulturkartellet_logo_hvid.png" alt="kulturkartellet logo hvid">
-        <p class="footer_kontakt">Kontakt:<a href="">info@kulturkartellet.dk</a></p>
+        <p class="footer_kontakt">Kontakt: <a class="footer_kontakt_a" href="">info@kulturkartellet.dk</a></p>
+
         <div class="footer_some_logo">
             <ul class="footer_logo_list">
-                <li><a href=""></a><img src="billeder/logo/instagram_glyph_white.png" alt="instagram logo hvid"></li>
-                <li><a href=""></a><img src="billeder/logo/facebook_logo_secondary.png" alt="facebook logo hvid"></li>
+                <li><a href=""></a><img class="footer_white_logo" src="billeder/logo/instagram_glyph_white.png" alt="instagram logo hvid"></li>
+                <li><a href=""></a><img class="footer_white_logo" src="billeder/logo/facebook_logo_secondary.png" alt="facebook logo hvid"></li>
             </ul>
         </div>
     </footer>
