@@ -104,9 +104,18 @@ img {
 
 header {
     height: 3.125rem;
+    width: 100%;
     background-color: #bbb5ff;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+}
+
+.logo {
+    width: 178px;
+    height: 100%;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 
 .header_navn {
@@ -131,10 +140,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-}
-
-.hamburgermenuen a:first-child{
-    padding-top:40px;
 }
 
 .hamburger {
@@ -178,24 +183,17 @@ header {
 }
 
 .sort_some_logo_mobil {
-    width: 20%;
-    margin-left: 0.5rem;
-    padding-right: 20px;
+    width: 20px;
+    margin: 5px;
+}
+
+.hamburger_some_logo {
+    display: flex;
+    margin-right: 15px;
+    margin-top: 10px;
 }
 
 
-
-.hero {
-    position: relative;
-    width: 100%;
-    height: 17.5rem;
-    overflow: hidden;
-    background-color: #D9C4B0;
-}
-.hero__billede {
-    display: none;
-    z-index:0;
-}
 
 
 
@@ -264,4 +262,15 @@ header {
 
 @media (min-width: 1024px) {
 
+    .hamburger {
+        display: none;
+    }
+
+    .header_nav {
+        display: flex;
+    }
+
+    .some_logo {
+        display: flex;
+    }
 }
