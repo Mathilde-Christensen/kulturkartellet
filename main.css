@@ -616,3 +616,10 @@ footer {
     }
 
 }
+
+@media (min-width: 1440px) {
+
+    .hjem_event {
+        width: 1000px;
+    }
+}
