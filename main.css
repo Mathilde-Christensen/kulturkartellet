@@ -111,6 +111,7 @@ header {
     position: fixed;
     background-color: #FEF4EA;
     z-index: 100;
+    border-bottom: solid 0.5px #791E19;
 }
 
 .logo {
@@ -240,6 +241,8 @@ footer {
   display: block;
   width: 100%;
   height: auto;
+  width: calc(100% + 4px);
+  margin-left: -2px; 
 }
 
 .hero__text {
@@ -267,7 +270,161 @@ footer {
     display: none; 
 }
 
+.hjem_event {
+    position: relative;   /* ← vigtig */
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #791E19;
+    outline: 7px solid #791E19;
+    outline-offset: 3px;
+    margin: 40px 30px 20px 30px;
+}
+  
+.hjem_event_tegninger {
+    position: relative;
+    z-index: 1;           /* under knappen */
+    display: flex;
+    align-items: end;
+    justify-content: right;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}  
+
+.hjem_event_vin {
+    width: 112px;
+    height: 170px;  
+}
+
+.hjem_event_ost {
+    width: 97px;
+    height: 58px;
+}
+
+.hjem_event_h2 {
+    margin: 20px 20px 10px 20px;
+}
+
+.hjem_event_p {
+    margin: 0px 20px;
+    margin-bottom: 10px;
+}
+
+.hjem_event_button {
+    align-items: center;
+}
+
+.event_button_a {
+    color: #FFF;
+}
+
+.event_button_a:hover {
+    color: #FFF;
+}
+
+.hjem_event_button {
+    position: absolute;
+    left: 50%;
+    bottom: 150px;
+    transform: translateX(-50%);  /* centrer vandret */
+    z-index: 2;
+}
+
+.hjem_modos {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+}
+
+.hjem_modos_img {
+    padding-bottom: 10px;
+}
+
+.hjem_modos_h2 {
+    padding: 10px 0px;
+}
+
+.hjem_modos_p {
+    padding-bottom: 20px;
+}
+
+.hjem_modos_button {
+    display: flex;
+    justify-content: center;
+}
+
+.hjem_modos_a {
+    color: #FFF;
+}
+
+.hjem_modos_a:hover {
+    color: #FFF;
+}
+
+.footer_white_logo:hover {
+    transform: scale(1.10);
+}
+
+.sort_some_logo {
+    transform: scale(1.10);
+}
+
 @media (min-width: 600px) {
+
+    .hjem_modos {
+        flex-direction: row;
+        margin: 40px 20px;
+        padding: 0px;
+    }
+
+    .hjem_modos_img {
+        width: 50%;
+    }
+
+    .hjem_modos_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 40px;
+    }
+
+   .hjem_event {
+    flex-direction: row;
+    justify-content: space-between;
+   }
+
+   .hjem_event_button {
+    position: static;     /* tilbage i normal flow */
+    right: auto;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    z-index: auto;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .hjem_event_tegninger {
+    z-index: auto;
+  }
+
+  .hjem_event_ost {
+    width: 121px;
+    height: 72px;
+  }
+
+  .hjem_event_vin {
+    width: 157px;
+    height: 238px;
+  }
+
+  .hjem_event_text {
+    width: 50%;
+  }
+   
+}
+
+@media (min-width: 850px) {
     h1 {
         color: #FFF;
         font-family: Gloock;
@@ -280,7 +437,7 @@ footer {
     h2 {
         color: #791E19;
         font-family: Gloock;
-        font-size: 2.5;
+        font-size: 2.5rem;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -314,8 +471,8 @@ footer {
     }
     
     button {
-        width: 10.1875rem;
-        height: 3.125rem;
+        width: 8.6875rem;
+        height: 2.6875rem;
         background: #791E19;
         flex-shrink: 0;
         color: #FFF8F8;
@@ -327,6 +484,14 @@ footer {
         line-height: normal;
         border-radius: 1.875rem;
         border: none;
+    }
+
+    .hero_logo {
+        width: 757px;
+    }
+
+    .hjem_event {
+        padding: 0px 30px;
     }
 }
 
@@ -343,6 +508,7 @@ footer {
 
     .header_nav {
         display: block;
+        margin-right: 10%;
     }
 
     .header_nav_a {
@@ -390,6 +556,63 @@ footer {
 
     .footer_kontakt {
         margin-bottom: 10px;
+    }
+
+    .hero_img_desktop { 
+        display: block;
+        width: 100%;
+        height: auto;
+        width: calc(100% + 2px);
+        margin-left: -1px;     
+    }
+
+    .hero_img_mobil { 
+        display: none;
+    }
+
+    .hero { 
+        height: 536px;
+        padding: 0; 
+        border: 0;
+    }
+
+    .hero_logo {
+        width: 757px;
+    }
+
+    .hero__p {
+        font-size: 0.90rem;
+    }
+
+    .hjem_event {
+        margin: 30px 100px;
+        height: 485px;
+        align-items: center;
+    }
+
+    .hjem_event_text {
+        margin: 0px 30px;
+    }
+
+    .hjem_event_tegninger {
+        margin-right: 50px;
+        
+    }
+
+    .hjem_event_ost {
+        width: 200px;
+        height: 118px;
+    }
+
+    .hjem_event_vin {
+        width: 227px;
+        height: 344px;
+    }
+
+    .hjem_modos {
+        flex-direction: row;
+        margin: 50px 100px;
+        padding: 0px;
     }
 
 }
