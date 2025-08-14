@@ -143,6 +143,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    border-left: solid #791E19 0.5px;
 }
 
 .hamburger {
@@ -368,6 +369,116 @@ footer {
     transform: scale(1.10);
 }
 
+.event {
+  position: relative; /* så pseudo-elementer kan placeres relativt */
+  display: flex;
+  flex-direction: column;
+  border-top: 3px solid #791E19;
+  border-bottom: 3px solid #791E19;
+  margin: 40px 30px 40px 30px;
+}
+
+.event::before,
+.event::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 7px; /* tykkelsen på den ydre kant */
+  background: #791E19;
+}
+
+/* Top-kant med præcis 3px afstand */
+.event::before {
+  top: calc(-3px - 3px - 7px); 
+  /* = - (border 3px + gap 3px + outer border 7px) */
+}
+
+/* Bund-kant med præcis 3px afstand */
+.event::after {
+  bottom: calc(-3px - 3px - 7px);
+}
+
+.event_text {
+    margin: 20px 0px;
+}
+
+.event_h2 {
+    margin-bottom: 10px;
+}
+
+.event_dato {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.event_buttom {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.event_buttom_a {
+    color: #FFF;
+}
+
+.event_buttom_a:hover {
+    color: #FFF;
+}
+
+.event_billede {
+    margin-bottom: 20px;
+}
+
+.omos_indtroduktion {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.omos_indtroduktion_h2 {
+    margin-bottom: 20px;
+}
+
+.omos_proesentation {
+    display: flex;
+    flex-direction: column;
+    border-top: 3px solid #791E19;
+    margin: 30px 30px 30px 30px;
+    position: relative;
+}
+
+
+.omos_proesentation::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 7px; /* tykkelsen på den ydre kant */
+  background: #791E19;
+}
+
+/* Top-kant med præcis 3px afstand */
+.omos_proesentation::before {
+  top: calc(-3px - 3px - 7px); 
+  /* = - (border 3px + gap 3px + outer border 7px) */
+}
+
+.proesentation_img_v {
+    margin-top: 20px;
+}
+
+.proesentation_img_h {
+    margin-top: 20px;
+}
+
+.omos_proesentation_h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+
 @media (min-width: 600px) {
 
     .hjem_modos {
@@ -388,40 +499,57 @@ footer {
     }
 
    .hjem_event {
-    flex-direction: row;
-    justify-content: space-between;
-   }
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
    .hjem_event_button {
-    position: static;     /* tilbage i normal flow */
-    right: auto;
-    bottom: auto;
-    left: auto;
-    transform: none;
-    z-index: auto;
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-  }
+        position: static;     /* tilbage i normal flow */
+        right: auto;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        z-index: auto;
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
   
   .hjem_event_tegninger {
-    z-index: auto;
-  }
+        z-index: auto;
+    }
 
   .hjem_event_ost {
-    width: 121px;
-    height: 72px;
-  }
+        width: 121px;
+        height: 72px;
+    }
 
   .hjem_event_vin {
-    width: 157px;
-    height: 238px;
-  }
+        width: 157px;
+        height: 238px;
+    }
 
   .hjem_event_text {
-    width: 50%;
-  }
-   
+        width: 50%;
+    }
+
+  .omos_proesentation {
+        flex-direction: row;
+        align-items: center;
+    }
+
+  .proesentation_img_v {
+        width: 50%;
+        margin-right: 20px;
+        width: 300px;
+    }
+
+    .proesentation_img_h {
+        width: 50%;
+        margin-left: 20px;
+        width: 300px;
+    }
+    
 }
 
 @media (min-width: 850px) {
@@ -615,11 +743,64 @@ footer {
         padding: 0px;
     }
 
+    .event {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .event_billede {
+        width: 50%;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .omos_proesentation {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .omos_indtroduktion {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .proesentation_img_h {
+        width: 347px;
+        margin-left: 60px;
+    }
+
+    .proesentation_img_v {
+        width: 347px;
+        margin-right: 60px;
+    }
+
 }
 
 @media (min-width: 1440px) {
 
+    .width_length_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .hjem_event {
-        width: 1000px;
+        width: 1240px;
+    }
+
+    .hjem_modos {
+        width: 1240px;
+    }
+
+    .event {
+        width: 1240px;
+    }
+
+    .omos_proesentation {
+        width: 1240px;
+    }
+
+    .omos_indtroduktion {
+        width: 1240px;
     }
 }
