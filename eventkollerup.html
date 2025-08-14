@@ -14,22 +14,47 @@
 <body>
     <header>
         <div class="logo">
-            <img src="billeder/logo/kulturkartellet_logo_rod.png" alt="KulturKartellet rød logo">
+            <a href="index.html"><img src="billeder/logo/kulturkartellet_logo_rod.png" alt="KulturKartellet rød logo"></a>
         </div>
+
+        <button class="hamburger" onclick="openNav(0)">
     
-        <nav class="header_navn">
-            <ul class="header_list">
+            <svg width="40" height="17" viewBox="0 0 55 24" fill="none">              
+                <rect id="streg_1" width="40" height="2" fill="#791E19"></rect>         
+                <rect id="streg_2" y="11" width="40" height="2" fill="#791E19"></rect>
+                <rect id="streg_3" y="22" width="40" height="2" fill="#791E19"></rect>
+            </svg>  <!--størrelsen, højden og farven for mine streger - hamburgermenuen-->  
+
+        </button>
+
+        <div id="minHamburgermenu" class="hamburgermenuen">
+            <ul class="header_list_mobil">
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="event.html">Event</a></li>
                 <li><a href="omos.html">Om os</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
+
+            <div class="hamburger_some_logo">
+                <a class="hamburger_a_logo" href="#"><img class="sort_some_logo_mobil" src="billeder/logo/instagram_glyph_black.png" alt="instagram logo"></a>
+                <a class="hamburger_a_logo" href="#"><img class="sort_some_logo_mobil" src="billeder/logo/black_facebook_PNG.png" alt="facebook logo"></a>
+            </div>
+            
+        </div>
+
+        <nav class="header_nav">
+            <ul class="header_list">
+                <li><a class="header_nav_a" href="index.html">Hjem</a></li>
+                <li><a class="header_nav_a" href="event.html">Event</a></li>
+                <li><a class="header_nav_a" href="omos.html">Om os</a></li>
+                <li><a class="header_nav_a" href="kontakt.html">Kontakt</a></li>
+            </ul>
         </nav>
-    
+
         <div class="some_logo">
             <ul class="logo_list">
-                <li><a href=""></a><img src="billeder/logo/instagram_glyph_black.png" alt="instagram logo"></li>
-                <li><a href=""></a><img src="billeder/logo/black_facebook_PNG.png" alt="facebook logo"></li>
+                <li><a href=""></a><img class="sort_some_logo" src="billeder/logo/instagram_glyph_black.png" alt="instagram logo"></li>
+                <li><a href=""></a><img class="sort_some_logo"src="billeder/logo/black_facebook_PNG.png" alt="facebook logo"></li>
             </ul>
         </div>
     </header>
@@ -37,75 +62,67 @@
     <main>
         <div class="hero">
             <div class="hero">
-                <img class="hero_billede" src="billeder/hero/kantaraller.webp" alt="skærebrædt med kantraller">
+                <img class="hero_billede" src="billeder/juleevent/KulturKartellet_JUL_7.jpg" alt="skærebrædt med kantraller">
                 
                 <div class="hero__text">
-                    <h1>Mad, musik og vin på Kollerup gods</h1>
+                    <h1>Et juleeventyr på Kollerup Gods</h1>
                 </div>
             </div>
         </div>
 
-        <div class="event_information">
+        <div class="width_length_box">
+            <div class="event_information">
+                <div class="event_intro">
+                    <h2 class="event_intro_navn">Julestemning med toner, lys og smagfulde oplevelser</h2>
+                    <h4 class="event_intro_pris">0.000,00kr </h4>
+                    <p class="event_intro_text">
+                        Når mørket falder på, og den første vinterkulde kribler i kinderne, 
+                        åbner vi portene til en fortryllende aften på Kollerup Gods. 
+                        KulturKartellet inviterer til årets sidste – og måske mest magiske – sammenkomst: 
+                        En Julelysfest, hvor lys, musik og smag smelter sammen i ét eventyrligt øjeblik.
+                        Vi begynder i godsets stemningsfulde kapel, hvor Jesper Bruun indleder aftenen med smukke toner, 
+                        der varsler både højtid og hjertevarme. Herfra ledes du af levende lys op til galleriet, 
+                        hvor en sanserig juleoplevelse venter.
+                    </p>
+                </div>
+                <div class="event_totaloplevelse">
+                    <h3 class="event_totaloplevelse_h3">En juleoplevelse på Kollerup Gods</h3>
+                    <ul class="event_totaloplevelse_ul">
+                        <li><h4>Dato</h4>Lørdag den 29. november 2025</li>
+                        <li><h4>Tid</h4>Arrangementet begynder kl. 17.00 og slutter omkring 22.00.</li>
+                        <li><h4>Sted</h4>Kollerup Gods</li>
+                    </ul>
+                    
+                </div>
+                <div class="event_program">
+                    <h3 class="event_program_h3">Aftens indhold</h3>
+                    <p class="event_program_bold">Udenfor dufter det af gran, og julelysene glimter i mørket – indenfor mødes vi i et forvandlet rum, hvor årstidens magi får lov at folde sig ud.</p>
+                    <ul class="event_program_ul">
+                        <li>En julemenu skabt med kærlighed og kreativitet – med et overraskende tvist</li>
+                        <li>Udvalgte drikkevarer, nøje sammensat til at løfte smagsoplevelsen</li>
+                        <li>Et smukt dekoreret galleri med varme, hygge og masser af levende lys</li>
+                        <li>Stemningsfuld julepynt og dekorationer signeret Pernille Hoffmann</li>
+                        <li>En unik ramme, hvor fællesskab og fordybelse er i centrum</li>
+                    </ul>
+                </div>
 
-            <div class="event_intro">
-                <h2 class="event_intro_dato">Lørdag den 16 August</h2>
-                <h2 class="event_intro_navn">Mad, Musik og vin på Kollurop Gods</h2>
-                <h3 class="event_intro_pris">1.495,00kr </h3>
-                <p class="event_intro_text">
-                    De historiske omgivelser på Kollerup Gods, 
-                    bidrager i sig selv til stemningen, 
-                    når Kultur Kartellet for første gang åbner dørene for arrangementet 
-                    “Mad, Musik og Vin”, lørdag den 16 August 2025.
-                </p>
+                <div class="event_køb_button">
+                    <button><a class="event_køb_a" href="">Køb</a></button>
+                </div>
+
             </div>
-
-            <div class="event_totaloplevelse">
-                <h3 class="event_totaloplevelse_h3">En totaloplevelse på Kollerup Gods</h3>
-                <ul class="event_totaloplevelse_ul">
-                    <li><h4>Dato</h4>Lørdag den 16 august</li>
-                    <li><h4>Tid</h4>Fra kl. 17</li>
-                    <li><h4>Sted</h4>Kollerup Gods</li>
-                </ul>
-
-                <p class="event_totaloplevelse_p">
-                    Vores første arrangement i Kultur Kartellet bliver en aften ud over det sædvanlige. 
-                    Med Kollerup Gods som en smuk og historisk ramme inviterer vi til en totaloplevelse, 
-                    hvor vi forener kultur, mad, vin og fællesskab på en enestående måde.
-                </p>
-            </div>
-
-            <div class="event_program">
-                <h3 class="event_program_h3">Aftenens program</h3>
-                <h4 class="event_program_h4">Velkomst med bobler & snacks</h4>
-                <ul class="event_program_ul">
-                    <li>Godsejer Niels Christian Selchau-Mark fortæller om godsets historie</li>
-                    <li>Rundvisning med Pia Selchau-Mark, i den private have, som normalt ikke er åben for offentligheden</li>
-                    <li>Hyggemusik og sang i haven ved Jesper Brun-Jensen</li>
-                </ul>
-
-                <h4 class="event_program_h4">Social dining i galleriet på Kollerup Gods</h4>
-                <ul class="event_program_ul">
-                    <li>Menu er skabt af Sif Orellana, Vivian Christensen, Simon Würtz og Alex Kjær Nielsen – alt er hjemmelavet og smukt anrettet</li>
-                    <li>Langbordene er smukt dækket af Pia Selchau-Mark og Lene Barslund Petersen, med antikviteter fra Taastrupgaard</li>
-                    <li>Blomsterudsmykning lavet af Pernille Hoffmann</li>
-                    <li>Unik vinsmagning ved vinekspert Flemming Nielsen fra Wineboutique</li>
-                    <li>Undervejs: fortællinger, sang og musik med Flemming Nielsen og Jesper Bruun-Jensen</li>
-                </ul>
-            </div>
-
-            <button class="event_køb_button">Køb</button>
-
         </div>
 
     </main>
 
     <footer>
         <img class="footer_logo" src="billeder/logo/kulturkartellet_logo_hvid.png" alt="kulturkartellet logo hvid">
-        <p class="footer_kontakt">Kontakt:<a href="">info@kulturkartellet.dk</a></p>
+        <p class="footer_kontakt">Kontakt: <a class="footer_kontakt_a" href="">info@kulturkartellet.dk</a></p>
+
         <div class="footer_some_logo">
             <ul class="footer_logo_list">
-                <li><a href=""></a><img src="billeder/logo/instagram_glyph_white.png" alt="instagram logo hvid"></li>
-                <li><a href=""></a><img src="billeder/logo/facebook_logo_secondary.png" alt="facebook logo hvid"></li>
+                <li><a href=""></a><img class="footer_white_logo" src="billeder/logo/instagram_glyph_white.png" alt="instagram logo hvid"></li>
+                <li><a href=""></a><img class="footer_white_logo" src="billeder/logo/facebook_logo_secondary.png" alt="facebook logo hvid"></li>
             </ul>
         </div>
     </footer>

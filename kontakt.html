@@ -14,72 +14,113 @@
 <body>
     
 </body>
-<header>
-    <div class="logo">
-        <img src="billeder/logo/kulturkartellet_logo_rod.png" alt="KulturKartellet rød logo">
-    </div>
-
-    <nav class="header_navn">
-        <ul class="header_list">
-            <li><a href="index.html">Hjem</a></li>
-            <li><a href="event.html">Event</a></li>
-            <li><a href="omos.html">Om os</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-    </nav>
-
-    <div class="some_logo">
-        <ul class="logo_list">
-            <li><a href=""></a><img src="billeder/logo/instagram_glyph_black.png" alt="instagram logo"></li>
-            <li><a href=""></a><img src="billeder/logo/black_facebook_PNG.png" alt="facebook logo"></li>
-        </ul>
-    </div>
-</header>
-
-<main>
-    <div class="kontakt">
-        <div class="kontakt_text">
-            <h2 class="kontakt_intro_h2">Vil du høre mere? Kontakt os her</h2>
-            <p class="kontakt_intro_p">Vi vil gerne høre fra dig! 
-                Har du brug for mere info om vores arrangementer, 
-                billetter eller noget helt tredje, så send os en mail. 
-                Vi glæder os til at høre fra dig og hjælper gerne med dine spørgsmål.
-            </p>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="billeder/logo/kulturkartellet_logo_rod.png" alt="KulturKartellet rød logo"></a>
         </div>
 
-        <div class="kontakt_information">
-            <div class="kontakt_information_text">
-                <div class="kontakt_mail">
-                    <h2 class="kontakt_mail_h2"></h2>
-                    <a href="">info@kulturkartellet.dk</a>
-                </div>
+        <button class="hamburger" onclick="openNav(0)">
+    
+            <svg width="40" height="17" viewBox="0 0 55 24" fill="none">              
+                <rect id="streg_1" width="40" height="2" fill="#791E19"></rect>         
+                <rect id="streg_2" y="11" width="40" height="2" fill="#791E19"></rect>
+                <rect id="streg_3" y="22" width="40" height="2" fill="#791E19"></rect>
+            </svg>  <!--størrelsen, højden og farven for mine streger - hamburgermenuen-->  
 
-                <div class="kontakt_nummer">
-                    <h2 class="kontakt_mail_h2"></h2>
-                    <a href="">+45 27 64 69 60</a>
-                </div>
+        </button>
 
-                <div class="kontakt_adresse">
-                    <h2 class="kontakt_mail_h2"></h2>
-                    <a href="">Kollerup Godsvej 23, 9700 Brønderslev</a>
-                </div>
+        <div id="minHamburgermenu" class="hamburgermenuen">
+            <ul class="header_list_mobil">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="omos.html">Om os</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+
+            <div class="hamburger_some_logo">
+                <a class="hamburger_a_logo" href="#"><img class="sort_some_logo_mobil" src="billeder/logo/instagram_glyph_black.png" alt="instagram logo"></a>
+                <a class="hamburger_a_logo" href="#"><img class="sort_some_logo_mobil" src="billeder/logo/black_facebook_PNG.png" alt="facebook logo"></a>
             </div>
             
-            <img class="kontakt_information_img" src="billeder/tegninger/kaffekande.svg" alt="tegnede kaffekande">
-            
         </div>
-    </div>
-</main>
 
-<footer>
-    <img class="footer_logo" src="billeder/logo/kulturkartellet_logo_hvid.png" alt="kulturkartellet logo hvid">
-    <p class="footer_kontakt">Kontakt:<a href="">info@kulturkartellet.dk</a></p>
-    <div class="footer_some_logo">
-        <ul class="footer_logo_list">
-            <li><a href=""></a><img src="billeder/logo/instagram_glyph_white.png" alt="instagram logo hvid"></li>
-            <li><a href=""></a><img src="billeder/logo/facebook_logo_secondary.png" alt="facebook logo hvid"></li>
-        </ul>
-    </div>
-</footer>
+        <nav class="header_nav">
+            <ul class="header_list">
+                <li><a class="header_nav_a" href="index.html">Hjem</a></li>
+                <li><a class="header_nav_a" href="event.html">Event</a></li>
+                <li><a class="header_nav_a" href="omos.html">Om os</a></li>
+                <li><a class="header_nav_a" href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <div class="some_logo">
+            <ul class="logo_list">
+                <li><a class="sort_some_a" href=""></a><img class="sort_some_logo" src="billeder/logo/instagram_glyph_black.png" alt="instagram logo"></li>
+                <li><a class="sort_some_a" href=""></a><img class="sort_some_logo"src="billeder/logo/black_facebook_PNG.png" alt="facebook logo"></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="hero">
+            <div class="hero">
+                <img class="hero_billede" src="billeder/hero/madskaale.webp" alt="skærebrædt med kantraller">
+                
+                <div class="hero__text">
+                    <h1>Kontakt os</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="width_length_box">
+            <div class="kontakt">
+                <div class="kontakt_text">
+                    <h2 class="kontakt_intro_h2">Vil du høre mere? Kontakt os her</h2>
+                    <p class="kontakt_intro_p">Vi vil gerne høre fra dig!
+                        Har du brug for mere info om vores arrangementer,
+                        billetter eller noget helt tredje, så send os en mail.
+                        Vi glæder os til at høre fra dig og hjælper gerne med dine spørgsmål.
+                    </p>
+
+                    <div class="kontakt_information_text">
+                        <div class="kontakt_mail">
+                            <h2 class="kontakt_mail_h2">Mail</h2>
+                            <a class="kontakt_a" href="">info@kulturkartellet.dk</a>
+                        </div>
+                        <div class="kontakt_nummer">
+                            <h2 class="kontakt_mail_h2">Telefon</h2>
+                            <a class="kontakt_a" href="">+45 27 64 69 60</a>
+                        </div>
+                        <div class="kontakt_adresse">
+                            <h2 class="kontakt_mail_h2">Adresse</h2>
+                            <a class="kontakt_a" href="">Kollerup Godsvej 23, 9700 Brønderslev</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+        
+                <div class="kontakt_img_box">
+                    <img class="kontakt_information_img" src="billeder/tegninger/kaffekande.svg" alt="tegnede kaffekande">
+                </div>
+            
+                
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <img class="footer_logo" src="billeder/logo/kulturkartellet_logo_hvid.png" alt="kulturkartellet logo hvid">
+        <p class="footer_kontakt">Kontakt: <a class="footer_kontakt_a" href="">info@kulturkartellet.dk</a></p>
+
+        <div class="footer_some_logo">
+            <ul class="footer_logo_list">
+                <li><a class="sort_some_a" href=""></a><img class="footer_white_logo" src="billeder/logo/instagram_glyph_white.png" alt="instagram logo hvid"></li>
+                <li><a class="sort_some_a" href=""></a><img class="footer_white_logo" src="billeder/logo/facebook_logo_secondary.png" alt="facebook logo hvid"></li>
+            </ul>
+        </div>
+    </footer>
 
 </html>

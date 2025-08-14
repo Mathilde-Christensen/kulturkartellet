@@ -67,6 +67,7 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: 1.5625rem; /* 178.571% */
+    padding: 15px 30px;
 }
 
 button {
@@ -195,6 +196,14 @@ header {
     display: flex;
     margin-right: 15px;
     margin-top: 10px;
+}
+
+.sort_some_a {
+    padding: 0px;
+}
+
+.hamburger_a_logo {
+    padding: 0px;
 }
 
 footer {
@@ -477,7 +486,97 @@ footer {
     margin-bottom: 10px;
 }
 
+.event_information {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #791E19;
+    outline: 7px solid #791E19;
+    outline-offset: 3px;
+    margin: 40px 30px 20px 30px;
+    padding: 30px;
+}
 
+.event_intro_navn {
+    margin-bottom: 10px;
+}
+
+.event_intro_text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.event_totaloplevelse_h3 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.event_totaloplevelse_ul li {
+    margin-bottom: 10px;
+}
+
+.event_program_h3 {
+    margin-top: 30px;
+}
+
+.event_program_ul li {
+    margin-bottom: 30px;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.event_program_bold {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.event_køb_a {
+    color: #FFF;
+}
+
+.event_køb_a:hover {
+    color: #FFF;
+}
+
+.event_køb_button {
+    display: flex;
+    justify-content: center;
+}
+
+.kontakt {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #791E19;
+    outline: 7px solid #791E19;
+    outline-offset: 3px;
+    margin: 30px 30px 50px 30px;
+    padding: 30px;
+}
+
+.kontakt_intro_p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.kontakt_a {
+    padding: 0px;
+}
+
+.footer_kontakt_a {
+    padding: 0px;
+}
+
+.kontakt_information_img {
+    width: 100px;
+    display: flex;
+}
+
+.kontakt_img_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
 
 @media (min-width: 600px) {
 
@@ -498,12 +597,12 @@ footer {
         margin-left: 40px;
     }
 
-   .hjem_event {
+    .hjem_event {
         flex-direction: row;
         justify-content: space-between;
     }
 
-   .hjem_event_button {
+    .hjem_event_button {
         position: static;     /* tilbage i normal flow */
         right: auto;
         bottom: auto;
@@ -515,30 +614,30 @@ footer {
         margin: 20px;
     }
   
-  .hjem_event_tegninger {
+    .hjem_event_tegninger {
         z-index: auto;
     }
 
-  .hjem_event_ost {
+    .hjem_event_ost {
         width: 121px;
         height: 72px;
     }
 
-  .hjem_event_vin {
+      .hjem_event_vin {
         width: 157px;
         height: 238px;
     }
 
-  .hjem_event_text {
+    .hjem_event_text {
         width: 50%;
     }
 
-  .omos_proesentation {
+    .omos_proesentation {
         flex-direction: row;
         align-items: center;
     }
 
-  .proesentation_img_v {
+    .proesentation_img_v {
         width: 50%;
         margin-right: 20px;
         width: 300px;
@@ -548,6 +647,14 @@ footer {
         width: 50%;
         margin-left: 20px;
         width: 300px;
+    }
+
+    .kontakt {
+        flex-direction: row;
+    }
+
+    .kontakt_img_box {
+        justify-content: end;
     }
     
 }
@@ -648,11 +755,13 @@ footer {
     .some_logo {
         display: block;
         margin-right: 90px;
+        padding: 0px;
     }
 
     .sort_some_logo {
         width: 20px;
         margin: 14px 5px;
+        padding: 0px;
     }
 
     .logo_list {
@@ -774,6 +883,23 @@ footer {
         margin-right: 60px;
     }
 
+    .event_information {
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 50px;
+    }
+
+    .kontakt {
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 50px;
+        padding: 100px 50px;
+    }
+
+    .kontakt_information_img {
+        margin-right: 50px;
+    }
+
 }
 
 @media (min-width: 1440px) {
@@ -801,6 +927,14 @@ footer {
     }
 
     .omos_indtroduktion {
+        width: 1240px;
+    }
+
+    .event_information {
+        width: 1240px;
+    }
+
+    .kontakt {
         width: 1240px;
     }
 }
