@@ -21,52 +21,60 @@
         </div>
 
 <!--- Header -->
-    <header>
-        <div class="logo">
-            <a href="index.html"><img src="billeder/logo/kulturkartellet_logo_rod.png" alt="KulturKartellet rød logo"></a>
+<header>
+    <div class="logo">
+        <a href="index.html"><img src="billeder/logo/kulturkartellet_logo_rod.png" alt="KulturKartellet rød logo"></a>
+    </div>
+
+    <button class="hamburger" onclick="openNav(0)">
+
+        <svg width="40" height="17" viewBox="0 0 55 24" fill="none">              
+            <rect id="streg_1" width="40" height="2" fill="#791E19"></rect>         
+            <rect id="streg_2" y="11" width="40" height="2" fill="#791E19"></rect>
+            <rect id="streg_3" y="22" width="40" height="2" fill="#791E19"></rect>
+        </svg>  <!--størrelsen, højden og farven for mine streger - hamburgermenuen-->  
+
+    </button>
+
+    <div id="minHamburgermenu" class="hamburgermenuen">
+        <ul class="header_list_mobil">
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="omos.html">Om os</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+
+        <div class="hamburger_some_logo">
+            <a class="hamburger_a_logo" href="#"><img class="sort_some_logo_mobil" src="billeder/logo/instagram_glyph_black.png" alt="instagram logo"></a>
+            <a class="hamburger_a_logo" href="#"><img class="sort_some_logo_mobil" src="billeder/logo/black_facebook_PNG.png" alt="facebook logo"></a>
         </div>
+        
+    </div>
 
-        <button class="hamburger" onclick="openNav(0)">
-    
-            <svg width="40" height="17" viewBox="0 0 55 24" fill="none">              
-                <rect id="streg_1" width="40" height="2" fill="#791E19"></rect>         
-                <rect id="streg_2" y="11" width="40" height="2" fill="#791E19"></rect>
-                <rect id="streg_3" y="22" width="40" height="2" fill="#791E19"></rect>
-            </svg>  <!--størrelsen, højden og farven for mine streger - hamburgermenuen-->  
+    <nav class="header_nav">
+        <ul class="header_list">
+            <li><a class="header_nav_a" href="index.html">Hjem</a></li>
+            <li><a class="header_nav_a" href="event.html">Event</a></li>
+            <li><a class="header_nav_a" href="omos.html">Om os</a></li>
+            <li><a class="header_nav_a" href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
 
-        </button>
-
-        <div id="minHamburgermenu" class="hamburgermenuen">
-            <ul class="header_list_mobil">
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="event.html">Event</a></li>
-                <li><a href="omos.html">Om os</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-
-            <div class="hamburger_some_logo">
-                <a class="hamburger_a_logo" href="#"><img class="sort_some_logo_mobil" src="billeder/logo/instagram_glyph_black.png" alt="instagram logo"></a>
-                <a class="hamburger_a_logo" href="#"><img class="sort_some_logo_mobil" src="billeder/logo/black_facebook_PNG.png" alt="facebook logo"></a>
-            </div>
-            
-        </div>
-
-        <nav class="header_nav">
-            <ul class="header_list">
-                <li><a class="header_nav_a" href="index.html">Hjem</a></li>
-                <li><a class="header_nav_a" href="event.html">Event</a></li>
-                <li><a class="header_nav_a" href="omos.html">Om os</a></li>
-                <li><a class="header_nav_a" href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
-
-        <div class="some_logo">
-            <ul class="logo_list">
-                <li><a href=""></a><img class="sort_some_logo" src="billeder/logo/instagram_glyph_black.png" alt="instagram logo"></li>
-                <li><a href=""></a><img class="sort_some_logo"src="billeder/logo/black_facebook_PNG.png" alt="facebook logo"></li>
-            </ul>
-        </div>
-    </header>
+    <div class="some_logo">
+        <ul class="logo_list">
+            <li>
+              <a class="sort_some_a" href="https://www.instagram.com/kultur_kartellet/">
+                <img class="sort_some_logo" src="billeder/logo/instagram_glyph_black.png" alt="Instagram">
+              </a>
+            </li>
+            <li>
+              <a class="sort_some_a" href="https://www.facebook.com/kulturkartellet"> <!-- indsæt rigtig URL -->
+                <img class="sort_some_logo" src="billeder/logo/black_facebook_PNG.png" alt="Facebook">
+              </a>
+            </li>
+        </ul>
+    </div>
+</header>
 
 <!--- Footer -->
     <footer>
